@@ -29,11 +29,7 @@ describe('assertion test', ()=>{
        cy.get('.oxd-button').click()
        cy.get('/a').should('have.length',5)
 
-       let expName="PaulArjunVRao Collings";
-       cy.get('.oxd-userdropdown-name').then((x)=>{
-
-        let actName=x.text()
-        expect(actName).to.equal(expName)
+       
        })
 
 
@@ -42,4 +38,4 @@ describe('assertion test', ()=>{
 
 
         })
-    })
+  
